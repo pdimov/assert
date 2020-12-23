@@ -178,7 +178,7 @@ jobs:
           echo GITHUB_REPOSITORY: %GITHUB_REPOSITORY%
           for /f %%i in ("%GITHUB_REPOSITORY%") do set LIBRARY=%%~nxi
           echo LIBRARY: %LIBRARY%
-          echo LIBRARY=%LIBRARY% >> %GITHUB_ENV%
+          echo LIBRARY=%LIBRARY%>>%GITHUB_ENV%
           echo GITHUB_BASE_REF: %GITHUB_BASE_REF%
           echo GITHUB_REF: %GITHUB_REF%
           if "%GITHUB_BASE_REF%" == "" set GITHUB_BASE_REF=%GITHUB_REF%
